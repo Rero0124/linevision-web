@@ -9,6 +9,8 @@
       padding: 0;
       background-color: #fff;
       color: #000;
+      min-height: 100%;
+      width: 100%;
     }
     header {
       background-color: #000;
@@ -35,13 +37,26 @@
       margin: 20px auto;
     }
     footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
       background-color: #000;
       color: #fff;
       text-align: center;
-      padding: 10px 0;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
+      padding: 20px 0;
+    }
+    footer .footer-content {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    footer .footer-content div {
+      margin: 10px;
+    }
+    footer .footer-content img {
+      max-width: 100px;
     }
   </style>
 </head>
@@ -54,7 +69,22 @@
     <p>LineVision은 최고의 웹사이트를 제공합니다. 우리의 서비스는 고객의 요구를 충족시키기 위해 최선을 다하고 있습니다.</p>
   </main>
   <footer>
-    Copyright &copy; 2025 LineVision. All rights reserved.
+    <div class="footer-content">
+      <div>
+        <img src="logo.png" alt="LineVision Logo">
+      </div>
+      <div>
+        <p>회사명: 라인비전</p>
+        <p>대표: 김승훈</p>
+        <p>사업자 등록번호: 189-65-00641</p>
+        <p>08571 서울특별시 독산로 22길 93, 1층 101호(시층동, J펠리체)</p>
+        <p>전화: 010-8989-9876</p>
+        <p>이메일: rero0124@linevision.com</p>
+      </div>
+    </div>
+    <div>
+      <p>Copyright &copy; 2025 LineVision. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
